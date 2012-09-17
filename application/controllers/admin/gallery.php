@@ -19,8 +19,7 @@ class Admin_Gallery_Controller extends Base_Controller{
 	}
 
 	public function action_new(){
-		echo "new image";
-		// logic to show new image
+		return View::make('admin.gallery.upload');
 	}
 
 
@@ -30,9 +29,8 @@ class Admin_Gallery_Controller extends Base_Controller{
 		// logic to updxate image here using $id
 	}
 
-	public function post_create(){
-		echo "new image";
-		// logic to create new image here
+	public function action_create(){
+		print_r(Input::upload(Input::file('image.tmp_name'), "/img/".Input::file('image.name') , Input::file('image.name')));
 	}
 
 	public function delete_delete($id){

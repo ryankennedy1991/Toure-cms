@@ -10,8 +10,8 @@ Logged in as <a href="#" class="navbar-link">Admin</a> | <a href="{{URL::to('adm
 @section('subnav')
 
 			  <li class="nav-header">Gallery Options</li>
-              <li><a href="{{ URL::to('admin/posts/new') }}">Upload New Image</a></li>
-              <li><a href="{{ URL::to('admin/posts') }}">View All Images</a></li>
+              <li><a href="{{ URL::to('admin/gallery/new') }}">Upload New Image</a></li>
+              <li><a href="{{ URL::to('admin/gallery') }}">View All Images</a></li>
 
                
 
@@ -35,6 +35,47 @@ Logged in as <a href="#" class="navbar-link">Admin</a> | <a href="{{URL::to('adm
 	<div class="hero-unit">
 		<h1>Gallery</h1>
 	</div>
+       <div class="row-fluid">
+        <ul class="thumbnails">
+  <li class="span3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/300x200" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+  <li class="span3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/300x200" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+  <li class="span3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/300x200" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+  <li class="span3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/300x200" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+  <li class="span3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/300x200" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+
+
+              </ul>
+       </div>
 
 
 

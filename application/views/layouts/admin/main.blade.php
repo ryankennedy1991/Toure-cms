@@ -8,6 +8,18 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <style>
+    ul.thumbnails li.span4:nth-child(3n + 4) {
+  margin-left : 0px;
+}
+
+ul.thumbnails li.span3:nth-child(4n + 5) {
+  margin-left : 0px;
+}
+
+ul.thumbnails li.span12 + li {
+  margin-left : 0px;
+}</style>
     <link href="{{ URL::to_asset('css/bootstrap.css') }}" rel="stylesheet">
     
     <style type="text/css">
@@ -18,6 +30,7 @@
       .sidebar-nav {
         padding: 9px 0;
       }
+      ul.thumbnails { margin-left: 0; margin-bottom: 0; }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -76,7 +89,6 @@
            
            	
 	         @yield('content')
-          </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
 
@@ -122,7 +134,8 @@ $('#subpage').change(function(){
 
 </script>
 @section('scripts')
-@yield('scripts')
+@yield_section
+
  
 
   </body>
