@@ -1,11 +1,18 @@
-### The Toure CMS 
------------------------
+## Big Title
+
+#sub heading
+--------------
 
 
-## About
+this is code 
+    <?php echo "hello"; ?>
 
-The toure cms is built on the back of one of the best php frameworks out
-there, Laravel!
+
+
+list 
+*this
+*that
+
 
 
 
