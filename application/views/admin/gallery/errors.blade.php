@@ -25,4 +25,15 @@
 <?php } ?>
 
 
-<?php print_r($errors); ?>
+@if (isset($errors) && count($errors->all()) > 0)
+	 <div class="alert alert-error">
+     <a class="close" data-dismiss="alert" href="#">×</a>
+  <h4 class="alert-heading">Warning!</h4>
+<ul>
+    @foreach ($errors->all('<li>:message</li>') as $message)
+    {{ $message }}
+    @endforeach
+    </ul>
+</div>
+	
+@endif

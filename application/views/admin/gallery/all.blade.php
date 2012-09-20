@@ -32,46 +32,24 @@ Logged in as <a href="#" class="navbar-link">Admin</a> | <a href="{{URL::to('adm
 
 
 @section('content')
+
+
+
 	<div class="hero-unit">
 		<h1>Gallery</h1>
 	</div>
        <div class="row-fluid">
         <ul class="thumbnails">
+        @foreach ($images as $image)  
   <li class="span3">
     <div class="thumbnail">
-      <img src="http://placehold.it/300x200" alt="">
-      <h3>Thumbnail label</h3>
-      <p>Thumbnail caption...</p>
+      <img src="{{ $image->location }}" alt="">
+      <h3>{{ $image->name }}</h3>
+      <p>{{ $image->description }}</p>
     </div>
   </li>
-  <li class="span3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/300x200" alt="">
-      <h3>Thumbnail label</h3>
-      <p>Thumbnail caption...</p>
-    </div>
-  </li>
-  <li class="span3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/300x200" alt="">
-      <h3>Thumbnail label</h3>
-      <p>Thumbnail caption...</p>
-    </div>
-  </li>
-  <li class="span3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/300x200" alt="">
-      <h3>Thumbnail label</h3>
-      <p>Thumbnail caption...</p>
-    </div>
-  </li>
-  <li class="span3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/300x200" alt="">
-      <h3>Thumbnail label</h3>
-      <p>Thumbnail caption...</p>
-    </div>
-  </li>
+  @endforeach
+
 
 
               </ul>

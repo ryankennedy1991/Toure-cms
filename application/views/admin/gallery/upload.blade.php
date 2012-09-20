@@ -31,10 +31,14 @@ Logged in as <a href="#" class="navbar-link">Admin</a> | <a href="{{URL::to('adm
 
 
 
+
 @section('content')
 	<div class="hero-unit">
 		<h1>Upload A New Image</h1>
 	</div>
+
+       @include('admin.gallery.success')
+       @include('admin.gallery.errors')
 
        <div class="row-fluid">
               <legend>New Image</legend>

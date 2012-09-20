@@ -4,12 +4,12 @@ class Image extends Eloquent
 {
 	public function user()
 	{
-		$this->belongs_to('User');
+		return $this->belongs_to('User');
 	}
 
 	public function post()
 	{
-		$this->belongs_to('Post');
+		return $this->belongs_to('Post');
 	}
 
 }
